@@ -171,7 +171,9 @@ body {
   transition: transform 0.5s;
 }
 
-.main-navigation-link:hover::before {
+.main-navigation-link:focus::before,
+.main-navigation-link:hover::before,
+.main-navigation-link:active::before {
   transform: scaleX(1);
 }
 
@@ -209,7 +211,9 @@ body {
   transition: transform 0.5s;
 }
 
-.menu-link-wrapper:hover::before {
+.menu-link-wrapper:focus::before,
+.menu-link-wrapper:hover::before,
+.menu-link-wrapper:active::before {
   transform: scaleX(1);
 }
 
