@@ -68,8 +68,13 @@ dd {
 */
 
 :root {
-  --main-text-color: ;
-  --main-background-color: ;
+
+  --global-background-color: #B6AEA7;
+
+
+  --main-text-color: #403F3D;
+  --main-background-color: #E1D4C9;
+    /*
   --main-decoration-color: ;
 
   --second-text-color: ;
@@ -83,6 +88,8 @@ dd {
   --fourth-text-color: ;
   --fourth-background-color: ;
   --fourth-decoration-color: ;
+  */
+
 }
 
 /*
@@ -90,3 +97,74 @@ dd {
 !GLOBAL_STYLES
 //////
 */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--main-text-color);
+  background-color: var(--global-background-color);
+}
+
+/*
+//////
+!HEADER
+//////
+*/
+
+.main-header {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+  background-color: var(--main-background-color);
+}
+
+
+/*
+//////
+!MAIN
+//////
+*/
+
+.main {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+  background-color: var(--main-background-color);
+}
+
+/*
+//////
+!FOOTER
+//////
+*/
+
+.main-footer {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+  background-color: var(--main-background-color);
+}
+
