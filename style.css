@@ -74,21 +74,14 @@ dd {
 
   --main-text-color: #403F3D;
   --main-background-color: #E1D4C9;
-    /*
-  --main-decoration-color: ;
+  --main-decoration-color: #C1B6AD;
 
-  --second-text-color: ;
-  --second-background-color: ;
-  --second-decoration-color: ;
+  --second-text-color: #E1D4C9;
+  --second-background-color: #665F55;
+  --second-decoration-color: #665F55;
 
-  --third-text-color: ;
-  --third-background-color: ;
-  --third-decoration-color: ;
-
-  --fourth-text-color: ;
-  --fourth-background-color: ;
-  --fourth-decoration-color: ;
-  */
+  --third-text-color: #B0907A;
+  --third-background-color:  #403F3DCC;
 
 }
 
@@ -220,8 +213,6 @@ body {
   transform: scaleX(1);
 }
 
-
-
 /*
 //////
 !MAIN
@@ -235,6 +226,89 @@ body {
   flex-direction: column;
   background-color: var(--main-background-color);
 }
+
+/*
+//////
+!ENJOY
+//////
+*/
+
+.enjoy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.enjoy-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 1360px;
+  min-height: 644px;
+  margin-bottom: 100px;
+  background-image: url("/assets/images//background-enjoy.png");
+  cursor: default;
+}
+
+.enjoy-header {
+  width: 530px;
+  height: 228px;
+  font-family: "Arial", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 75.6px;
+  text-align: left;
+  color: var(--second-text-color);
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+.enjoy-lead {
+  font-style: italic;
+  color: var(--third-text-color);
+}
+
+.enjoy-text {
+  width: 530px;
+  height: 72px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-left: 100px;
+  color: var(--second-text-color);
+}
+
+.enjoy-button {
+  display: flex;
+  width: 200px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: var(--main-background-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.enjoy-button:focus::after ,
+.enjoy-button:hover::after ,
+.enjoy-button:active::after {
+  content: url("/assets/icons/icon-coffee-cup.svg");
+  margin-left: 8px;
+  transition: transform 0.5s;
+}
+
+
 
 /*
 //////
