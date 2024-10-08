@@ -68,21 +68,21 @@ dd {
 */
 
 :root {
-  --main-text-color: ;
-  --main-background-color: ;
-  --main-decoration-color: ;
 
-  --second-text-color: ;
-  --second-background-color: ;
-  --second-decoration-color: ;
+  --global-background-color: #B6AEA7;
 
-  --third-text-color: ;
-  --third-background-color: ;
-  --third-decoration-color: ;
 
-  --fourth-text-color: ;
-  --fourth-background-color: ;
-  --fourth-decoration-color: ;
+  --main-text-color: #403F3D;
+  --main-background-color: #E1D4C9;
+  --main-decoration-color: #C1B6AD;
+
+  --second-text-color: #E1D4C9;
+  --second-background-color: #665F55;
+  --second-decoration-color: #665F55;
+
+  --third-text-color: #B0907A;
+  --third-background-color:  #403F3DCC;
+
 }
 
 /*
@@ -90,3 +90,129 @@ dd {
 !GLOBAL_STYLES
 //////
 */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--main-text-color);
+  background-color: var(--global-background-color);
+}
+
+/*
+//////
+!HEADER
+//////
+*/
+
+.main-header {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+  background-color: var(--main-background-color);
+}
+
+.main-navigation {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  user-select: none;
+  justify-content: space-between;
+}
+
+.main-navigation-list {
+  display: flex;
+  gap: 40px;
+}
+
+.main-navigation-item {
+  display: flex;
+  align-self: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.main-navigation-link {
+  position: relative;
+}
+
+.main-navigation-link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-text-color);
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.main-navigation-link:focus::before,
+.main-navigation-link:hover::before,
+.main-navigation-link:active::before {
+  transform: scaleX(1);
+}
+
+.menu-link-wrapper {
+  display: flex;
+  position: relative;
+  align-self: center;
+}
+
+.menu-link {
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.menu-link-icon {
+  display: flex;
+  background-image: url("./assets/icons/icon-coffee-cup.svg");
+  width: 20px;
+  height: 20px;
+  padding-bottom: 4px;
+  margin-left: 8px;
+}
+
+.menu-link-wrapper::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-text-color);
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.menu-link-wrapper:focus::before,
+.menu-link-wrapper:hover::before,
+.menu-link-wrapper:active::before {
+  transform: scaleX(1);
+}
