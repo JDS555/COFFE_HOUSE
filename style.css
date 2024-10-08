@@ -254,7 +254,7 @@ body {
   margin-right: 40px;
   margin-left: 40px;
   margin-bottom: 100px;
-  background-image: url("/assets/images//background-enjoy.png");
+  background-image: url("./assets/images//background-enjoy.png");
   cursor: default;
 }
 
@@ -309,11 +309,16 @@ body {
 .enjoy-button:focus::after,
 .enjoy-button:hover::after,
 .enjoy-button:active::after {
-  content: url("/assets/icons/icon-coffee-cup.svg");
+  content: url("./assets/icons/icon-coffee-cup.svg");
   margin-left: 8px;
   transition: 0.5s;
 }
 
+/*
+//////
+!FAVORITES
+//////
+*/
 
 
 /*
