@@ -184,7 +184,6 @@ body {
 }
 
 .menu-link {
-
   font-size: 16px;
   font-weight: 600;
 }
@@ -320,6 +319,145 @@ body {
 //////
 */
 
+.favorites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  cursor: default;
+}
+
+.favorites-text-decorator {
+  display: flex;
+  width: 56%;
+  justify-content: space-between;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 75px;
+  text-align: center;
+  flex-wrap: wrap;
+  color: var(--main-text-color);
+}
+
+.favorites-header {
+  display: flex;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 75px;
+  text-align: center;
+  flex-wrap: wrap;
+  color: var(--third-text-color);
+}
+
+.favorite-slider-wrapper {
+  display: flex;
+  width: 94%;
+  max-width: 1360px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.favorite-button {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: 1px solid var(--second-decoration-color);
+  align-self: center;
+  background: transparent;
+  cursor: pointer;
+}
+
+.favorite-button-before {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  background-image: url("./assets/icons/icon-arrow-left.svg");
+}
+
+.favorite-button:focus ,
+.favorite-button:hover ,
+.favorite-button:active {
+  background-color: var(--second-decoration-color);
+}
+
+/* !НЕ СМОГ СДЕЛАТЬ ИЗМЕНЕНИЕ ЦВЕТА СТРЕЛОК ПРИ АМИМАЦИИ:( */
+
+.favorite-button-after {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  background-image: url("./assets/icons/icon-arrow-right.svg");
+}
+
+.coffe-card {
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.image-coffee-slider-1 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.coffe-card-header {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 21px;
+}
+
+.coffe-card-text {
+  width: 475px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.coffe-card-price {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.favorite-controls-list {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.favorite-control{
+  display: flex;
+  width: 40px;
+  height: 4px;
+  background-color: var(--main-decoration-color);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.favorite-control-current {
+  background-color: var(--second-decoration-color);
+}
 
 /*
 //////
