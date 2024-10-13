@@ -5,3 +5,5 @@ Task: https://github.com/JDS555/RSS_JSFE_STAGE1_2024-03-16/blob/main/tasks/coffe
 
 Start: 2024-10-07
 Completed:
+
+Deploy gh-pages: https://jds555.github.io/COFFE_HOUSE/index.html
