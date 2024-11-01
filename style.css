@@ -7,20 +7,20 @@
 /* Removing the underscore and blue color of all links */
 a {
   color: inherit;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* Specify box sizing */
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove standard styling for all ul and il that have a class attribute*/
 ul[class],
 ol[class] {
-	list-style: none;
+  list-style: none;
 }
 
 /* Inherit fonts for intuitions and buttons */
@@ -28,19 +28,19 @@ input,
 button,
 textarea,
 select {
-	font: inherit;
+  font: inherit;
 }
 
 /* Simplifying work with images */
 img {
-	max-width: 100%;
-	display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /* Remove internal indentation */
 ul,
 ol {
-	padding: 0;
+  padding: 0;
 }
 
 /* Remove the outside indentation */
@@ -58,7 +58,7 @@ figcaption,
 blockquote,
 dl,
 dd {
-	margin: 0;
+  margin: 0;
 }
 
 /*
@@ -81,7 +81,7 @@ dd {
   --second-decoration-color: #665F55;
 
   --third-text-color: #B0907A;
-  --third-background-color:  #403F3DCC;
+  --third-background-color: #403F3DCC;
 
 }
 
@@ -382,8 +382,8 @@ body {
   background-image: url("./assets/icons/icon-arrow-left.svg");
 }
 
-.favorite-button:focus ,
-.favorite-button:hover ,
+.favorite-button:focus,
+.favorite-button:hover,
 .favorite-button:active {
   background-color: var(--second-decoration-color);
 }
@@ -446,7 +446,7 @@ body {
   margin-top: 40px;
 }
 
-.favorite-control{
+.favorite-control {
   display: flex;
   width: 40px;
   height: 4px;
@@ -458,6 +458,123 @@ body {
 .favorite-control-current {
   background-color: var(--second-decoration-color);
 }
+
+
+/*
+//////
+!ABOUT
+//////
+*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1360px;
+  margin-top: 60px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.about-header {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 75px;
+  text-align: left;
+  color: var(--main-text-color);
+  margin-bottom: 40px;
+}
+
+.about-header-decorator {
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 75px;
+  text-align: left;
+  color: var(--third-text-color);
+}
+
+.about-list {
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-width: 1360px;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.about-items-1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.about-items-2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.about-image {
+  display: flex;
+  border-radius: 20px;
+}
+
+.about-image-1 {
+  display: flex;
+  width: 660px;
+  height: 590px;
+  background: no-repeat center;
+  background-image: url(./assets/images/image-about-1.jpg);
+  background-size: 110%;
+  transition: 0.5s;
+}
+
+
+.about-image-2 {
+  width: 660px;
+  height: 430px;
+  background: no-repeat center;
+  background-image: url(./assets/images/image-about-2.jpg);
+  background-size: 110%;
+  transition: 0.5s;
+}
+
+
+.about-image-3 {
+  width: 660px;
+  height: 430px;
+  background: no-repeat center;
+  background-image: url(./assets/images/image-about-3.jpg);
+  background-size: 110%;
+  transition: 0.5s;
+}
+
+.about-image-4 {
+  width: 660px;
+  height: 590px;
+  background: no-repeat center;
+  background-image: url(./assets/images/image-about-4.jpg);
+  background-size: 110%;
+  transition: 0.5s;
+}
+
+.about-image:hover,
+.about-image:focus,
+.about-image:active {
+  background-size: 100%;
+  transition: 0.5s;
+}
+
+/* /// */
+
+/*
+//////
+!APPLICATION
+//////
+*/
+
 
 /*
 //////
@@ -472,4 +589,3 @@ body {
   flex-direction: column;
   background-color: var(--main-background-color);
 }
-
