@@ -79,13 +79,6 @@ user-select: none;
 
 
 
-//////
+///
 
-
-.about-image:hover,
-.about-image:focus,
-.about-image:active {
-  background-size: 100%;
-  transition: 0.5s;
-}
 
